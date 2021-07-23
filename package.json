@@ -1,0 +1,30 @@
+{
+  "name": "reactshop",
+  "version": "1.0.0",
+  "description": "Shopping Cart App",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently --raw \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sacpoddar/reactshop.git"
+  },
+  "author": "sachin poddar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sacpoddar/reactshop/issues"
+  },
+  "homepage": "https://github.com/sacpoddar/reactshop#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "nodemon": "^2.0.12"
+  }
+}
